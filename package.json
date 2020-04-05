@@ -1,0 +1,31 @@
+{
+  "name": "assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilaniAntony/Bootstrap_Assessment_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhilaniAntony/Bootstrap_Assessment_1/issues"
+  },
+  "homepage": "https://github.com/PhilaniAntony/Bootstrap_Assessment_1#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "funding": "^1.0.9",
+    "jquery": "^3.4.1",
+    "tether": "^1.4.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
+ 

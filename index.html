@@ -8,374 +8,650 @@
     <meta name="keywords" content="amet consectetur adipisicing elit. Dolorem earum inventore placeat quam, rem veniam quos">
     <meta name="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum inventore placeat quam, rem veniam quos rerum ratione laborum exercitationem?">
 
-    <!-- Bootstrap CSS -->
+    <!-- Font awesome and custom fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/sass/style.css">
     <title>creativeoutlines.com</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
-       <div class="container">
-        <a class="navbar-brand">Milano</a>
-        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <section class="page-header">
+      <nav class="navbar navbar-expand-lg" id="page-header_nav">
+        <div class="container">
+          <a class="navbar-brand">
+            M<span style="color: #ea6227f5;">i</span><span style="color:white;">l</span>
+            <span style="color:white;">a</span><span style="color: #ea6227f5;">n</span>o
+          </a>
+          <button class="navbar-toggler" data-target="#page-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="my-nav" class="collapse navbar-collapse">
+          </button>
+          <div id="page-nav" class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link " href="#" tabindex="-1" > Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"  >Contact Us</a>
+              </li>
             </ul>
+          </div>
+        </div><!--nav-container-->
+      </nav><!--End of navigation-bar-->
+      <div class="page-header_banner" id="page-banner">
+        <div class="container">
+          <div class="page-header_banner--content">
+             <h1 class="page-header_banner--content-header"> About us </h1>
+             <p class="page-header_banner--content-text">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatem 
+               officiis saepe dolor earum fuga. Nesciunt eaque provident distinctio ipsam.
+             </p>
+             <div class="page-header_banner--content-devider justify-content-start "></div>
+             <button class="btn btn-outline-light" href="contactus.html">Contact Us</button>
+          </div>
         </div>
-       </div>
-    </nav>
-    <section id="" class="bannerSection mt-4">
-      <div class="jumbotron">
-        <div class="container">  
-          <h2 class="display-3 bannerSection-header">About Us</h2>
-          <hr class="my-2">
-          <p class="lead bannerSection-header">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum ad architecto voluptates, reprehenderit vero!
-          </p>
-          <button class="btn btn-outline-primary  mt-4" href="Jumbo action link" role="button">About Us</button>
       </div>
-      </div>       
     </section>
-    
-    <section class="team-members">
-        <div class="container team-member_cards">
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="card">
-                        <div class="row">
-                            <div class="col-4">
-                                <img class="img-fluid" src="/images/pathToYourImage.png" > 
+    <section class="team-members" id="members-section">
+      <div class="container" id="imm-child">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="col-4">
+                <img src="assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="" class="img-fluid team-members_content-imag-pic" id="mage">
+            </div>
+            <div class="col-8">
+              <div class="card team-members_content" id="team-member-card">
+                <div class="team-members_content-text">
+                  <div class="card-body" id="identity-card"></div><!--card-body-->
+                    <h4 class="card-title"><i class="fa fa-user-circle" aria-hidden="true"></i> Jayne Pero</h4>
+                    <h6 class="card-subtitle mb-2 t"> <i class="fa fa-briefcase" aria-hidden="true"></i>  Project Manager</h6>
+                    <hr>
+                    <p class="card-text">
+                      Some quick example text to build on the card title
+                      and make up the bulk of the card's content.
+                    </p>
+                    <button href="#!" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">Read more ⤵  </button>
+                      <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Leave you details and we will get in touch <i class="fa fa-smile-o" aria-hidden="true"></i></h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                               </button>
                             </div>
-                            <div class="col-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Name of Person</h4>
-                                    <h6>Job Title</h6>
-                                    <hr class="card-divider">
-                                    <p class="card-text">
-                                       Some quick example text to build on the card title
-                                       and make up the bulk of the card's content.
-                                     </p>
-                                     <!--modal toggle-->
-                                     <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal3">
-                                        Connect
-                                      </button>
-                                     <!--Modal Body-->
-                                     <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <h5 class="modal-title" id="exampleModal3Label">Leave your details below 😍 </h5>
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                              </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-group">
-                                                      <label for="formGroupExampleInput">Name</label>
-                                                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="enter your name">
-                                                    </div>
-                                                    <div class="form-group">
-                                                      <label for="formGroupExampleInput2">Email</label>
-                                                      <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="name@email.com">
-                                                    </div>
-                                                    <button type="submit" class="btn btn-outline-primary">Submit</button>
-                                                </form>
-                                            </div>
-                                            
-                                          </div>
-                                        </div>
-                                      </div><!--modal end-->
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputName">Name</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputSurname">Surname</label>
+                                    <input type="text" class="form-control" id="inputSurname" placeholder="Surname">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputEmail">Email</label>
+                                  <input type="text" class="form-control" id="inputEmail" placeholder="name@email.com">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPhone">Address 2</label>
+                                  <input type="tel" class="form-control" id="inputPhone" placeholder="+2743642747">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputAddress">Adress</label>
+                                    <input type="text" class="form-control" id="inputAdress" placeholder="Address">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputCity">City</label>
+                                    <select id="inputCity" class="form-control">
+                                     <option selected>Cape Town</option>
+                                     <option selected>Durban</option>
+                                     <option selected>PTA</option>
+                                    </select>
                                  </div>
+                                <div class="form-group col-md-2">
+                                  <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="Zip-code">
+                              </div>
                             </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                            </div>
+                            
+                          </div>
                         </div>
-                    </div><!--end -of card2-->
-                </div><!--end -of col-->
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="card">
-                        <div class="row">
-                            <div class="col-4">
-                                <img class="img-fluid" src="/images/pathToYourImage.png" > 
+                      </div>
+                  </div><!--/card-body-->
+                  <div class="card-footer">
+                    <span class="social-icons">
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div><!--/card-content-->  
+              </div><!--/team-members_conten-->
+            </div>
+          </div><!--/col-->
+          <div class="col-md-6 col-lg-4">
+            <div class="col-4">
+                <img src="assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="" class="img-fluid team-members_content-imag-pic" id="mage">
+            </div>
+            <div class="col-8">
+              <div class="card team-members_content" id="team-member-card">
+                <div class="team-members_content-text">
+                  <div class="card-body" id="identity-card"></div><!--card-body-->
+                    <h4 class="card-title"><i class="fa fa-user-circle" aria-hidden="true"></i> Jayne Pero</h4>
+                    <h6 class="card-subtitle mb-2 t"> <i class="fa fa-briefcase" aria-hidden="true"></i>  Project Manager</h6>
+                    <hr>
+                    <p class="card-text">
+                      Some quick example text to build on the card title
+                      and make up the bulk of the card's content.
+                    </p>
+                    <button href="#!" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">Read more ⤵  </button>
+                      <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Leave you details and we will get in touch <i class="fa fa-smile-o" aria-hidden="true"></i></h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                               </button>
                             </div>
-                            <div class="col-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Name of Person</h4>
-                                    <h6>Job Title</h6>
-                                    <hr class="card-divider">
-                                    <p class="card-text">
-                                       Some quick example text to build on the card title
-                                       and make up the bulk of the card's content.
-                                     </p>
-                                     <!--modal toggle-->
-                                     <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal3">
-                                        Connect
-                                      </button>
-                                     <!--Modal Body-->
-                                     <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <h5 class="modal-title" id="exampleModal3Label">Leave your details below 😍 </h5>
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                              </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-group">
-                                                      <label for="formGroupExampleInput">Name</label>
-                                                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="enter your name">
-                                                    </div>
-                                                    <div class="form-group">
-                                                      <label for="formGroupExampleInput2">Email</label>
-                                                      <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="name@email.com">
-                                                    </div>
-                                                    <button type="submit" class="btn btn-outline-primary">Submit</button>
-                                                </form>
-                                            </div>
-                                            
-                                          </div>
-                                        </div>
-                                      </div><!--modal end-->
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputName">Name</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputSurname">Surname</label>
+                                    <input type="text" class="form-control" id="inputSurname" placeholder="Surname">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputEmail">Email</label>
+                                  <input type="text" class="form-control" id="inputEmail" placeholder="name@email.com">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPhone">Address 2</label>
+                                  <input type="tel" class="form-control" id="inputPhone" placeholder="+2743642747">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputAddress">Adress</label>
+                                    <input type="text" class="form-control" id="inputAdress" placeholder="Address">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputCity">City</label>
+                                    <select id="inputCity" class="form-control">
+                                     <option selected>Cape Town</option>
+                                     <option selected>Durban</option>
+                                     <option selected>PTA</option>
+                                    </select>
                                  </div>
+                                <div class="form-group col-md-2">
+                                  <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="Zip-code">
+                              </div>
                             </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                            </div>
+                            
+                          </div>
                         </div>
-                    </div><!--end -of card2-->
-                </div><!--end -of col-->
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="card">
-                        <div class="row">
-                            <div class="col-4">
-                                <img class="img-fluid" src="/images/pathToYourImage.png" > 
+                      </div>
+                  </div><!--/card-body-->
+                  <div class="card-footer">
+                    <span class="social-icons">
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div><!--/card-content-->  
+              </div><!--/team-members_conten-->
+            </div>
+          </div><!--/col-->
+          <div class="col-md-6 col-lg-4">
+            <div class="col-4">
+                <img src="assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="" class="img-fluid team-members_content-imag-pic" id="mage">
+            </div>
+            <div class="col-8">
+              <div class="card team-members_content" id="team-member-card">
+                <div class="team-members_content-text">
+                  <div class="card-body" id="identity-card"></div><!--card-body-->
+                    <h4 class="card-title"><i class="fa fa-user-circle" aria-hidden="true"></i> Jayne Pero</h4>
+                    <h6 class="card-subtitle mb-2 t"> <i class="fa fa-briefcase" aria-hidden="true"></i>  Project Manager</h6>
+                    <hr>
+                    <p class="card-text">
+                      Some quick example text to build on the card title
+                      and make up the bulk of the card's content.
+                    </p>
+                    <button href="#!" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">Read more ⤵  </button>
+                      <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Leave you details and we will get in touch <i class="fa fa-smile-o" aria-hidden="true"></i></h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                               </button>
                             </div>
-                            <div class="col-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Name of Person</h4>
-                                    <h6>Job Title</h6>
-                                    <hr class="card-divider">
-                                    <p class="card-text">
-                                       Some quick example text to build on the card title
-                                       and make up the bulk of the card's content.
-                                     </p>
-                                     <!--modal toggle-->
-                                     <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal3">
-                                        Connect
-                                      </button>
-                                     <!--Modal Body-->
-                                     <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <h5 class="modal-title" id="exampleModal3Label">Leave your details below 😍 </h5>
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                              </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-group">
-                                                      <label for="formGroupExampleInput">Name</label>
-                                                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="enter your name">
-                                                    </div>
-                                                    <div class="form-group">
-                                                      <label for="formGroupExampleInput2">Email</label>
-                                                      <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="name@email.com">
-                                                    </div>
-                                                    <button type="submit" class="btn btn-outline-primary">Submit</button>
-                                                </form>
-                                            </div>
-                                            
-                                          </div>
-                                        </div>
-                                      </div><!--modal end-->
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputName">Name</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputSurname">Surname</label>
+                                    <input type="text" class="form-control" id="inputSurname" placeholder="Surname">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputEmail">Email</label>
+                                  <input type="text" class="form-control" id="inputEmail" placeholder="name@email.com">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPhone">Address 2</label>
+                                  <input type="tel" class="form-control" id="inputPhone" placeholder="+2743642747">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputAddress">Adress</label>
+                                    <input type="text" class="form-control" id="inputAdress" placeholder="Address">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputCity">City</label>
+                                    <select id="inputCity" class="form-control">
+                                     <option selected>Cape Town</option>
+                                     <option selected>Durban</option>
+                                     <option selected>PTA</option>
+                                    </select>
                                  </div>
+                                <div class="form-group col-md-2">
+                                  <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="Zip-code">
+                              </div>
                             </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                            </div>
+                            
+                          </div>
                         </div>
-                    </div><!--end -of card2-->
-                </div><!--end -of col-->
-
-            </div><!--end of row-->
-            <div class="row mt-5">
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="card">
-                        <div class="row">
-                            <div class="col-4">
-                                <img class="img-fluid" src="/images/pathToYourImage.png" > 
+                      </div>
+                  </div><!--/card-body-->
+                  <div class="card-footer">
+                    <span class="social-icons">
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div><!--/card-content-->  
+              </div><!--/team-members_conten-->
+            </div>
+          </div><!--/col-->
+          <div class="col-md-6 col-lg-4">
+            <div class="col-4">
+                <img src="assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="" class="img-fluid team-members_content-imag-pic" id="mage">
+            </div>
+            <div class="col-8">
+              <div class="card team-members_content" id="team-member-card">
+                <div class="team-members_content-text">
+                  <div class="card-body" id="identity-card"></div><!--card-body-->
+                    <h4 class="card-title"><i class="fa fa-user-circle" aria-hidden="true"></i> Jayne Pero</h4>
+                    <h6 class="card-subtitle mb-2 t"> <i class="fa fa-briefcase" aria-hidden="true"></i>  Project Manager</h6>
+                    <hr>
+                    <p class="card-text">
+                      Some quick example text to build on the card title
+                      and make up the bulk of the card's content.
+                    </p>
+                    <button href="#!" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">Read more ⤵  </button>
+                      <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Leave you details and we will get in touch <i class="fa fa-smile-o" aria-hidden="true"></i></h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                               </button>
                             </div>
-                            <div class="col-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Name of Person</h4>
-                                    <h6>Job Title</h6>
-                                    <hr class="card-divider">
-                                    <p class="card-text">
-                                       Some quick example text to build on the card title
-                                       and make up the bulk of the card's content.
-                                     </p>
-                                     <!--modal toggle-->
-                                     <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal3">
-                                        Connect
-                                      </button>
-                                     <!--Modal Body-->
-                                     <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <h5 class="modal-title" id="exampleModal3Label">Leave your details below 😍 </h5>
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                              </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-group">
-                                                      <label for="formGroupExampleInput">Name</label>
-                                                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="enter your name">
-                                                    </div>
-                                                    <div class="form-group">
-                                                      <label for="formGroupExampleInput2">Email</label>
-                                                      <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="name@email.com">
-                                                    </div>
-                                                    <button type="submit" class="btn btn-outline-primary">Submit</button>
-                                                </form>
-                                            </div>
-                                            
-                                          </div>
-                                        </div>
-                                      </div><!--modal end-->
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputName">Name</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputSurname">Surname</label>
+                                    <input type="text" class="form-control" id="inputSurname" placeholder="Surname">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputEmail">Email</label>
+                                  <input type="text" class="form-control" id="inputEmail" placeholder="name@email.com">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPhone">Address 2</label>
+                                  <input type="tel" class="form-control" id="inputPhone" placeholder="+2743642747">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputAddress">Adress</label>
+                                    <input type="text" class="form-control" id="inputAdress" placeholder="Address">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputCity">City</label>
+                                    <select id="inputCity" class="form-control">
+                                     <option selected>Cape Town</option>
+                                     <option selected>Durban</option>
+                                     <option selected>PTA</option>
+                                    </select>
                                  </div>
+                                <div class="form-group col-md-2">
+                                  <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="Zip-code">
+                              </div>
                             </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                            </div>
+                            
+                          </div>
                         </div>
-                    </div><!--end -of card2-->
-                </div><!--end -of col-->
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="card">
-                        <div class="row">
-                            <div class="col-4">
-                                <img class="img-fluid" src="/images/pathToYourImage.png" > 
+                      </div>
+                  </div><!--/card-body-->
+                  <div class="card-footer">
+                    <span class="social-icons">
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div><!--/card-content-->  
+              </div><!--/team-members_conten-->
+            </div>
+          </div><!--/col-->
+          <div class="col-md-6 col-lg-4">
+            <div class="col-4">
+                <img src="assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="" class="img-fluid team-members_content-imag-pic" id="mage">
+            </div>
+            <div class="col-8">
+              <div class="card team-members_content" id="team-member-card">
+                <div class="team-members_content-text">
+                  <div class="card-body" id="identity-card"></div><!--card-body-->
+                    <h4 class="card-title"><i class="fa fa-user-circle" aria-hidden="true"></i> Jayne Pero</h4>
+                    <h6 class="card-subtitle mb-2 t"> <i class="fa fa-briefcase" aria-hidden="true"></i>  Project Manager</h6>
+                    <hr>
+                    <p class="card-text">
+                      Some quick example text to build on the card title
+                      and make up the bulk of the card's content.
+                    </p>
+                    <button href="#!" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">Read more ⤵  </button>
+                      <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Leave you details and we will get in touch <i class="fa fa-smile-o" aria-hidden="true"></i></h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                               </button>
                             </div>
-                            <div class="col-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Name of Person</h4>
-                                    <h6>Job Title</h6>
-                                    <hr class="card-divider">
-                                    <p class="card-text">
-                                       Some quick example text to build on the card title
-                                       and make up the bulk of the card's content.
-                                     </p>
-                                     <!--modal toggle-->
-                                     <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal3">
-                                        Connect
-                                      </button>
-                                     <!--Modal Body-->
-                                     <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <h5 class="modal-title" id="exampleModal3Label">Leave your details below 😍 </h5>
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                              </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-group">
-                                                      <label for="formGroupExampleInput">Name</label>
-                                                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="enter your name">
-                                                    </div>
-                                                    <div class="form-group">
-                                                      <label for="formGroupExampleInput2">Email</label>
-                                                      <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="name@email.com">
-                                                    </div>
-                                                    <button type="submit" class="btn btn-outline-primary">Submit</button>
-                                                </form>
-                                            </div>
-                                            
-                                          </div>
-                                        </div>
-                                      </div><!--modal end-->
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputName">Name</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputSurname">Surname</label>
+                                    <input type="text" class="form-control" id="inputSurname" placeholder="Surname">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputEmail">Email</label>
+                                  <input type="text" class="form-control" id="inputEmail" placeholder="name@email.com">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPhone">Address 2</label>
+                                  <input type="tel" class="form-control" id="inputPhone" placeholder="+2743642747">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputAddress">Adress</label>
+                                    <input type="text" class="form-control" id="inputAdress" placeholder="Address">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputCity">City</label>
+                                    <select id="inputCity" class="form-control">
+                                     <option selected>Cape Town</option>
+                                     <option selected>Durban</option>
+                                     <option selected>PTA</option>
+                                    </select>
                                  </div>
+                                <div class="form-group col-md-2">
+                                  <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="Zip-code">
+                              </div>
                             </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                            </div>
+                            
+                          </div>
                         </div>
-                    </div><!--end -of card2-->
-                </div><!--end -of col-->
-                <div class="col-md-6 col-lg-4">
-
-                    <div class="card">
-                        <div class="row">
-                            <div class="col-4">
-                                <img class="img-fluid" src="/images/pathToYourImage.png" > 
+                      </div>
+                  </div><!--/card-body-->
+                  <div class="card-footer">
+                    <span class="social-icons">
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div><!--/card-content-->  
+              </div><!--/team-members_conten-->
+            </div>
+          </div><!--/col-->
+          <div class="col-md-6 col-lg-4">
+            <div class="col-4">
+                <img src="assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="" class="img-fluid team-members_content-imag-pic" id="mage">
+            </div>
+            <div class="col-8">
+              <div class="card team-members_content" id="team-member-card">
+                <div class="team-members_content-text">
+                  <div class="card-body" id="identity-card"></div><!--card-body-->
+                    <h4 class="card-title"><i class="fa fa-user-circle" aria-hidden="true"></i> Jayne Pero</h4>
+                    <h6 class="card-subtitle mb-2 t"> <i class="fa fa-briefcase" aria-hidden="true"></i>  Project Manager</h6>
+                    <hr>
+                    <p class="card-text">
+                      Some quick example text to build on the card title
+                      and make up the bulk of the card's content.
+                    </p>
+                    <button href="#!" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">Read more ⤵  </button>
+                      <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Leave you details and we will get in touch <i class="fa fa-smile-o" aria-hidden="true"></i></h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                               </button>
                             </div>
-                            <div class="col-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Name of Person</h4>
-                                    <h6>Job Title</h6>
-                                    <hr class="card-divider">
-                                    <p class="card-text">
-                                       Some quick example text to build on the card title
-                                       and make up the bulk of the card's content.
-                                     </p>
-                                     <!--modal toggle-->
-                                     <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal3">
-                                        Connect
-                                      </button>
-                                     <!--Modal Body-->
-                                     <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <h5 class="modal-title" id="exampleModal3Label">Leave your details below 😍 </h5>
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                              </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-group">
-                                                      <label for="formGroupExampleInput">Name</label>
-                                                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="enter your name">
-                                                    </div>
-                                                    <div class="form-group">
-                                                      <label for="formGroupExampleInput2">Email</label>
-                                                      <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="name@email.com">
-                                                    </div>
-                                                    <button type="submit" class="btn btn-outline-primary">Submit</button>
-                                                </form>
-                                            </div>
-                                            
-                                          </div>
-                                        </div>
-                                      </div><!--modal end-->
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputName">Name</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputSurname">Surname</label>
+                                    <input type="text" class="form-control" id="inputSurname" placeholder="Surname">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputEmail">Email</label>
+                                  <input type="text" class="form-control" id="inputEmail" placeholder="name@email.com">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPhone">Address 2</label>
+                                  <input type="tel" class="form-control" id="inputPhone" placeholder="+2743642747">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputAddress">Adress</label>
+                                    <input type="text" class="form-control" id="inputAdress" placeholder="Address">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputCity">City</label>
+                                    <select id="inputCity" class="form-control">
+                                     <option selected>Cape Town</option>
+                                     <option selected>Durban</option>
+                                     <option selected>PTA</option>
+                                    </select>
                                  </div>
+                                <div class="form-group col-md-2">
+                                  <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="Zip-code">
+                              </div>
                             </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                            </div>
+                            
+                          </div>
                         </div>
-                    </div><!--end -of card2-->
-                </div><!--end -of col-->
-            </div><!--end of row-->
-
-        </div>   
+                      </div>
+                  </div><!--/card-body-->
+                  <div class="card-footer">
+                    <span class="social-icons">
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="social-icons">
+                      <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div><!--/card-content-->  
+              </div><!--/team-members_conten-->
+            </div>
+          </div><!--/col-->
+        </div>
+      </div>
     </section>
     <footer class="page-footer mt-3">
-        <div class="container">
-            <p class="page-footer_content">
-                &copy; 2020: All Rights Reseved. Creative Outlines
-            </p>
-        </div>
+      <div class="container">
+        <p class="page-footer_content">
+          &copy; 2020 All Rights Reseved. Creative Outlines
+        </p>
+      </div>
     </footer>
     
 
@@ -384,5 +660,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
   </body>
 </html>
