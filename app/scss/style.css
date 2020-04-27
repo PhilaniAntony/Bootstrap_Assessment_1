@@ -9,15 +9,13 @@ body {
 .page-header {
   height: 75vh;
   position: relative;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f2a51ad1), to(#ea6227)), url(../images/robert-gomez-X1YdDXmHS4w-unsplash.jpg);
   background-image: linear-gradient(to right, #f2a51ad1, #ea6227), url(../images/robert-gomez-X1YdDXmHS4w-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 }
 
 .page-header_banner {
@@ -294,4 +292,3 @@ footer.page-footer.mt-3 {
   text-align: left;
   height: 7vh;
 }
-/*# sourceMappingURL=style.css.map */

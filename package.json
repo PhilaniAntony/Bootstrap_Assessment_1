@@ -1,10 +1,10 @@
 {
-  "name": "assessment",
+  "name": "bootstrap_end_of_module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,16 +16,19 @@
     "url": "https://github.com/PhilaniAntony/Bootstrap_Assessment_1/issues"
   },
   "homepage": "https://github.com/PhilaniAntony/Bootstrap_Assessment_1#readme",
-  "dependencies": {
-    "bootstrap": "^4.4.1",
-    "funding": "^1.0.9",
-    "jquery": "^3.4.1",
-    "tether": "^1.4.7"
-  },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
+    "popper": "^1.0.1"
   }
 }
- 
