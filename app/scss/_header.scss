@@ -1,0 +1,64 @@
+/*
+Theme color
+*/
+
+$theme-color1:#ffffff;
+$theme-color2:#ff8b38;
+$navbar-bg:#000;
+$font-stack :Raleway;
+
+@mixin nav-brand($weight) {
+    font-family: $font-stack;
+    font-weight: $weight;
+}
+
+@mixin nav-hover {
+    color: $theme-color2;
+    transform: scale(1.2);
+}
+
+//Navbar color
+.bg-black {
+    background-color: $navbar-bg;
+}
+
+span.navbar-brand_primary {
+    color: $theme-color1;
+    @include nav-brand(800);
+    font-size: 1.2;
+}
+
+span.navbar-brand_secondary {
+    color: $theme-color2;
+    @include nav-brand(400);
+    font-size: 1.2;
+
+}
+
+a.nav-link {
+    color: $theme-color1;
+    font-family: $font-stack;
+    transition: ease-in .5s;
+
+    &:hover {
+        @include nav-hover;
+
+    }
+
+    &:active {
+        @include nav-hover;
+    }
+
+    /*
+    &:visited {
+        color: rgba($theme-color2, 0.75);
+    }
+    */
+}
+
+button.navbar-toggler {
+
+    background-color: transparent;
+    border: 1px solid $theme-color2;
+    border-radius: 0.25rem;
+}

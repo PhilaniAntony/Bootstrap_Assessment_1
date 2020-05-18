@@ -62,20 +62,17 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
   @media (max-width: 575.98px) {
     .page-header {
-      height: 30vh; } }
+      height: 36vh; } }
   @media (min-width: 576px) and (max-width: 767.98px) {
     .page-header {
-      height: 33vh; } }
+      height: 40vh; } }
   @media (min-width: 768px) and (max-width: 991.98px) {
     .page-header {
-      height: 40vh; } }
+      height: 51vh; } }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     .page-header {
-      height: 50vh; } }
+      height: 55vh; } }
   @media (min-width: 1200px) and (max-width: 1920px) {
-    .page-header {
-      height: 70vh; } }
-  @media (min-width: 2559.98px) and (max-width: 3999.98px) {
     .page-header {
       height: 75vh; } }
   .page-header_banner {
@@ -85,75 +82,44 @@ body {
     /*==============HEADER-HEADING H1 STYLES======================*/
     /*====================HEADER TEXT STYLES============= */
     /*===============HORIZONTAL DEVIDER=======================*/ }
-    @media (max-width: 575.98px) {
-      .page-header_banner {
-        position: relative;
-        top: 20%; } }
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      .page-header_banner {
-        position: relative;
-        top: 20%; } }
     @media (min-width: 768px) and (max-width: 991.98px) {
       .page-header_banner {
         position: relative;
-        top: 17%; } }
+        top: 10%; } }
     @media (min-width: 992px) and (max-width: 1199.98px) {
       .page-header_banner {
         position: relative;
-        top: 20%; } }
+        top: 10%; } }
     @media (min-width: 1200px) and (max-width: 1920px) {
       .page-header_banner {
-        position: relative;
-        top: 25%; } }
-    @media (min-width: 2559.98px) and (max-width: 3999.98px) {
-      .page-header_banner {
-        position: relative;
-        top: 30%; } }
+        height: 65vh; } }
     .page-header_banner--content-header {
       font-family: 'Montserrat', sans-serif;
-      font-size: 3em; }
-      @media (max-width: 575.98px) {
-        .page-header_banner--content-header {
-          font-size: 3em; } }
-      @media (min-width: 576px) and (max-width: 767.98px) {
-        .page-header_banner--content-header {
-          font-size: 3.1em; } }
+      font-size: 3.5em; }
       @media (min-width: 768px) and (max-width: 991.98px) {
         .page-header_banner--content-header {
-          font-size: 3.2em;
+          font-size: 4.5em;
           margin-bottom: 0.3em; } }
       @media (min-width: 992px) and (max-width: 1199.98px) {
         .page-header_banner--content-header {
-          font-size: 3.3em;
+          font-size: 4.5em;
           margin-bottom: .4em; } }
       @media (min-width: 1200px) and (max-width: 1920px) {
         .page-header_banner--content-header {
-          font-size: 3.4em;
-          margin-bottom: 0; } }
-      @media (min-width: 2559.98px) and (max-width: 3999.98px) {
-        .page-header_banner--content-header {
-          font-size: 8.5em;
-          margin-bottom: 0; } }
+          font-size: 4.5em;
+          margin-bottom: 0.5em; } }
     .page-header_banner--content-text {
       font-size: 20px;
       font-weight: 300; }
-      @media (max-width: 767.98px) {
-        .page-header_banner--content-text {
-          font-size: 1.4rem; } }
       @media (min-width: 768px) and (max-width: 991.98px) {
         .page-header_banner--content-text {
-          font-size: 1.5rem; } }
+          font-size: 1.5em; } }
       @media (min-width: 992px) and (max-width: 1199.98px) {
         .page-header_banner--content-text {
-          font-size: 1.7rem;
-          line-height: .9em;
+          font-size: 1.8rem;
+          line-height: 1.4em;
           margin-bottom: .6em; } }
       @media (min-width: 1200px) and (max-width: 1920px) {
-        .page-header_banner--content-text {
-          font-size: 1.8rem;
-          font-weight: 200;
-          margin-bottom: 1.3em; } }
-      @media (min-width: 2559.98px) and (max-width: 3999.98px) {
         .page-header_banner--content-text {
           font-size: 1.8rem;
           font-weight: 200;
@@ -189,27 +155,19 @@ body {
 button.btn.btn-outline-light {
   font-size: 0.8rem;
   line-height: 1.9; }
-  @media (max-width: 767.98px) {
-    button.btn.btn-outline-light {
-      font-size: 1.5rem; } }
   @media (min-width: 768px) and (max-width: 991.98px) {
     button.btn.btn-outline-light {
-      font-size: 1.5rem; } }
+      font-size: 2.0rem; } }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     button.btn.btn-outline-light {
-      line-height: 1.75;
-      font-size: 1.5rem;
+      line-height: 1.8;
+      font-size: 2.5rem;
       padding: 0 1.5rem; } }
   @media (min-width: 1200px) and (max-width: 1920px) {
     button.btn.btn-outline-light {
-      line-height: 1.75;
-      font-size: 1.5rem;
+      line-height: 1.8;
+      font-size: 1.4rem;
       padding: 0 1.1rem; } }
-  @media (min-width: 2559.98px) and (max-width: 3999.98px) {
-    button.btn.btn-outline-light {
-      font-size: 1.5rem;
-      line-height: 1.75;
-      padding: 5px 25px; } }
 
 /*===============CRAD sTION=======================*/
 .team {
@@ -232,7 +190,6 @@ button.btn.btn-outline-light {
     width: 15%;
     margin: 5px auto 10px; }
   .team-subtitle {
-    font-family: Raleway;
     font-weight: 300;
     font-size: 1.2em;
     font-family: 'Montserrat', sans-serif; }
@@ -270,20 +227,7 @@ button.btn.btn-outline-light {
         left: 0%;
         padding: 5px;
         border: 3px solid #ea6227; }
-        @media (max-width: 767.98px) {
-          .team-member_pro-pic__image.img-fluid:hover {
-            max-width: 50%;
-            height: 115px;
-            border-radius: 10%;
-            left: 50%;
-            top: 73%; } }
-      @media (max-width: 767.98px) {
-        .team-member_pro-pic__image.img-fluid {
-          left: 50%;
-          top: 73%;
-          z-index: 100; } }
     .team-member_name {
-      font-family: Raleway;
       color: #ea6227;
       font-size: 1.5em;
       font-weight: 300;
@@ -292,8 +236,6 @@ button.btn.btn-outline-light {
       .team-member_name:hover {
         transform: scale(1.1);
         font-weight: 500; }
-    .team-member_info {
-      font-family: Raleway; }
 
 button.btn-outline-secondary {
   border-color: #ea6227;
