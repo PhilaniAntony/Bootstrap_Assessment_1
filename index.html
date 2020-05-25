@@ -58,27 +58,27 @@
                   Home
                 </a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="#">
                   Features
                 </a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="#">
                   Pricing
                 </a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="#">
                   Reviews
                 </a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">
+              <li class="nav-item">
+                <a class="nav-link current" href="#">
                   About Us
                 </a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="#">
                   Contact Us
                 </a>
@@ -178,128 +178,127 @@
                       class="btn btn-outline-secondary btn-sm"
                       data-toggle="modal"
                       data-target="#exampleModal"
+                      id="person-one"
+                      onclick="openModal()"
                     >
                       Read more
                     </button>
-                    <!--======================*MODAL*========================-->
-                    <div
-                      class="modal"
-                      id="exampleModal"
-                      tabindex="-1"
-                      role="dialog"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              Leave you details and we will get in touch
-                              <i class="fa fa-smile-o" aria-hidden="true"></i>
-                            </h5>
-                            <button
-                              type="button"
-                              class="close"
-                              data-dismiss="modal"
-                              aria-label="Close"
-                            >
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="inputName">Name</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputName"
-                                  />
-                                </div>
-                                <div class="form-group col-md-6">
-                                  <label for="inputSurname">Surname</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputSurname"
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="inputEmail">Email</label>
-                                  <input
-                                    type="email"
-                                    class="form-control"
-                                    id="inputEmail"
-                                  />
-                                </div>
-                                <div class="form-group col-md-6">
-                                  <label for="inputTel">Cellphone Number</label>
-                                  <input
-                                    type="tel"
-                                    class="form-control"
-                                    id="inputTel"
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="inputAddress">Adress</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputAdress"
-                                  />
-                                </div>
-                                <div class="form-group col-md-4">
-                                  <label for="inputCity">City</label>
-                                  <select id="inputCity" class="form-control">
-                                    <option selected>Cape Town</option>
-                                    <option selected>Durban</option>
-                                    <option selected>PTA</option>
-                                  </select>
-                                </div>
-                                <div class="form-group col-md-2">
-                                  <label for="inputZip">Zip</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputZip"
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <div class="form-check">
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    id="gridCheck"
-                                  />
-                                  <label
-                                    class="form-check-label"
-                                    for="gridCheck"
-                                  >
-                                    Check me out
-                                  </label>
-                                </div>
-                              </div>
-                              <button
-                                type="submit"
-                                class="btn btn-outline-secondary btn-sm"
-                              >
-                                Submit
-                              </button>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                      <!--======================* END OF MODAL*========================-->
-                    </div>
-                    <!--======================CONTENT HOLDER========================-->
                   </div>
                   <!--P4-->
+                  <!--======================*MODAL*========================-->
+                  <div
+                    class="modal"
+                    id="exampleModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Leave you details and we will get in touch
+                            <i class="fa fa-smile-o" aria-hidden="true"></i>
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputName">Name</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="inputName"
+                                />
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputSurname">Surname</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="inputSurname"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail">Email</label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="inputEmail"
+                                />
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputTel">Cellphone Number</label>
+                                <input
+                                  type="tel"
+                                  class="form-control"
+                                  id="inputTel"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputAddress">Adress</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="inputAdress"
+                                />
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label for="inputCity">City</label>
+                                <select id="inputCity" class="form-control">
+                                  <option selected>Cape Town</option>
+                                  <option selected>Durban</option>
+                                  <option selected>PTA</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="inputZip"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="gridCheck"
+                                />
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <button
+                              type="submit"
+                              class="btn btn-outline-secondary btn-sm"
+                            >
+                              Submit
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!--======================* END OF MODAL*========================-->
+                  </div>
+                  <!--======================CONTENT HOLDER========================-->
                 </div>
                 <!--======================*COL-MD-7*========================-->
               </div>
@@ -361,128 +360,11 @@
                     <button
                       href="#!"
                       class="btn btn-outline-secondary btn-sm"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
+                      id="person-two"
+                      onclick="openModal()"
                     >
                       Read more
                     </button>
-                    <!--======================*MODAL*========================-->
-                    <div
-                      class="modal"
-                      id="exampleModal"
-                      tabindex="-1"
-                      role="dialog"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              Leave you details and we will get in touch
-                              <i class="fa fa-smile-o" aria-hidden="true"></i>
-                            </h5>
-                            <button
-                              type="button"
-                              class="close"
-                              data-dismiss="modal"
-                              aria-label="Close"
-                            >
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="inputName">Name</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputName"
-                                  />
-                                </div>
-                                <div class="form-group col-md-6">
-                                  <label for="inputSurname">Surname</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputSurname"
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="inputEmail">Email</label>
-                                  <input
-                                    type="email"
-                                    class="form-control"
-                                    id="inputEmail"
-                                  />
-                                </div>
-                                <div class="form-group col-md-6">
-                                  <label for="inputTel">Cellphone Number</label>
-                                  <input
-                                    type="tel"
-                                    class="form-control"
-                                    id="inputTel"
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="inputAddress">Adress</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputAdress"
-                                  />
-                                </div>
-                                <div class="form-group col-md-4">
-                                  <label for="inputCity">City</label>
-                                  <select id="inputCity" class="form-control">
-                                    <option selected>Cape Town</option>
-                                    <option selected>Durban</option>
-                                    <option selected>PTA</option>
-                                  </select>
-                                </div>
-                                <div class="form-group col-md-2">
-                                  <label for="inputZip">Zip</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputZip"
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <div class="form-check">
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    id="gridCheck"
-                                  />
-                                  <label
-                                    class="form-check-label"
-                                    for="gridCheck"
-                                  >
-                                    Check me out
-                                  </label>
-                                </div>
-                              </div>
-                              <button
-                                type="submit"
-                                class="btn btn-outline-secondary btn-sm"
-                              >
-                                Submit
-                              </button>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                      <!--======================* END OF MODAL*========================-->
-                    </div>
-                    <!--======================CONTENT HOLDER========================-->
                   </div>
                   <!--P4-->
                 </div>
@@ -550,128 +432,11 @@
                     <button
                       href="#!"
                       class="btn btn-outline-secondary btn-sm"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
+                      id="person-two"
+                      onclick="openModal()"
                     >
                       Read more
                     </button>
-                    <!--======================*MODAL*========================-->
-                    <div
-                      class="modal"
-                      id="exampleModal"
-                      tabindex="-1"
-                      role="dialog"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              Leave you details and we will get in touch
-                              <i class="fa fa-smile-o" aria-hidden="true"></i>
-                            </h5>
-                            <button
-                              type="button"
-                              class="close"
-                              data-dismiss="modal"
-                              aria-label="Close"
-                            >
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="inputName">Name</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputName"
-                                  />
-                                </div>
-                                <div class="form-group col-md-6">
-                                  <label for="inputSurname">Surname</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputSurname"
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="inputEmail">Email</label>
-                                  <input
-                                    type="email"
-                                    class="form-control"
-                                    id="inputEmail"
-                                  />
-                                </div>
-                                <div class="form-group col-md-6">
-                                  <label for="inputTel">Cellphone Number</label>
-                                  <input
-                                    type="tel"
-                                    class="form-control"
-                                    id="inputTel"
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="inputAddress">Adress</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputAdress"
-                                  />
-                                </div>
-                                <div class="form-group col-md-4">
-                                  <label for="inputCity">City</label>
-                                  <select id="inputCity" class="form-control">
-                                    <option selected>Cape Town</option>
-                                    <option selected>Durban</option>
-                                    <option selected>PTA</option>
-                                  </select>
-                                </div>
-                                <div class="form-group col-md-2">
-                                  <label for="inputZip">Zip</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputZip"
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <div class="form-check">
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    id="gridCheck"
-                                  />
-                                  <label
-                                    class="form-check-label"
-                                    for="gridCheck"
-                                  >
-                                    Check me out
-                                  </label>
-                                </div>
-                              </div>
-                              <button
-                                type="submit"
-                                class="btn btn-outline-secondary btn-sm"
-                              >
-                                Submit
-                              </button>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                      <!--======================* END OF MODAL*========================-->
-                    </div>
-                    <!--======================CONTENT HOLDER========================-->
                   </div>
                   <!--P4-->
                 </div>
@@ -735,127 +500,12 @@
                     <button
                       href="#!"
                       class="btn btn-outline-secondary btn-sm"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
+                      id="person-three"
+                      onclick="openModal()"
                     >
                       Read more
                     </button>
-                    <!--======================*MODAL*========================-->
-                    <div
-                      class="modal"
-                      id="exampleModal"
-                      tabindex="-1"
-                      role="dialog"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              Leave you details and we will get in touch
-                              <i class="fa fa-smile-o" aria-hidden="true"></i>
-                            </h5>
-                            <button
-                              type="button"
-                              class="close"
-                              data-dismiss="modal"
-                              aria-label="Close"
-                            >
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="inputName">Name</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputName"
-                                  />
-                                </div>
-                                <div class="form-group col-md-6">
-                                  <label for="inputSurname">Surname</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputSurname"
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="inputEmail">Email</label>
-                                  <input
-                                    type="email"
-                                    class="form-control"
-                                    id="inputEmail"
-                                  />
-                                </div>
-                                <div class="form-group col-md-6">
-                                  <label for="inputTel">Cellphone Number</label>
-                                  <input
-                                    type="tel"
-                                    class="form-control"
-                                    id="inputTel"
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-row">
-                                <div class="form-group col-md-6">
-                                  <label for="inputAddress">Adress</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputAdress"
-                                  />
-                                </div>
-                                <div class="form-group col-md-4">
-                                  <label for="inputCity">City</label>
-                                  <select id="inputCity" class="form-control">
-                                    <option selected>Cape Town</option>
-                                    <option selected>Durban</option>
-                                    <option selected>PTA</option>
-                                  </select>
-                                </div>
-                                <div class="form-group col-md-2">
-                                  <label for="inputZip">Zip</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputZip"
-                                  />
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <div class="form-check">
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    id="gridCheck"
-                                  />
-                                  <label
-                                    class="form-check-label"
-                                    for="gridCheck"
-                                  >
-                                    Check me out
-                                  </label>
-                                </div>
-                              </div>
-                              <button
-                                type="submit"
-                                class="btn btn-outline-secondary btn-sm"
-                              >
-                                Submit
-                              </button>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                      <!--======================* END OF MODAL*========================-->
-                    </div>
+
                     <!--======================CONTENT HOLDER========================-->
                   </div>
                   <!--P4-->
@@ -871,6 +521,312 @@
         <!--======================*ROW3*========================-->
       </div>
       <!--======================*CARDS SECTION CONTAINER*========================-->
+    </section>
+    <section class="aboutMe" id="modal-one">
+      <div class="aboutMe-modal">
+        <div class="container">
+          <p class="aboutMe-modal-close" onclick="closeModal()">+</p>
+          <h5 class="aboutMe-modal-title">About</h5>
+          <h3 class="aboutMe-modal-subtitle">Let me introduce myself.</h3>
+          <div class="row">
+            <div class="col">
+              <img src="app/images/bianca-berg-J4LSoK1PvWM-unsplash.jpg" alt="team member image"
+                class="aboutMe-modal_image img-fluid" />
+                
+            </div>
+            <div class="col">
+              <p class="aboutMe-modal-icebreacker">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae tempore quisquam quam <br />
+                itaque fugiat velit incidunt voluptatum voluptatibus tempora,
+                nostrum eaque modi quasi <br />
+                aspernatur eos quo tenetur iste unde quibusdam similique, hic
+                harum iure porro. Perspiciatis <br />
+                repellendus ipsum similique atque quidem est, dolores officiis
+                esse, corporis qui nemo.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 aboutMe-modal-profile">
+              <h4 class="aboutMe-modal-profile_title">PROFILE</h4>
+              <p class="aboutMe-modal-profile_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae tempore quisquam quam.
+                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
+                nostrum eaque modi quasi
+              </p>
+              <h5 class="aboutMe-modal-profile_title">FULLNAME</h5>
+              <p class="aboutMe-modal-profile_text">Michael Doe</p>
+              <h5 class="aboutMe-modal-profile_title">WEBSITE</h5>
+              <p class="aboutMe-modal-profile_text">michaeldoe.com</p>
+              <h5 class="aboutMe-modal-profile_title">EMAIL</h5>
+              <p class="aboutMe-modal-profile_text">connect@michaeldoe.com</p>
+            </div>
+            <div class="col-6 abooutMe-modal-skill">
+              <h4 class="abooutMe-modal-skill_title">
+                SKILL
+              </h4>
+              <p class="aboutMe-modal-skill_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae tempore quisquam quam.
+                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
+                nostrum eaque modi quasi
+              </p>
+              <h5 class="aboutMe-modal-skill_title">Front end(HTML,CSS,JAVASCRIPT,JQUERY,REACT)</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="eightyfive">85%</span></p>
+              <h5 class="aboutMe-modal-skill_title">Back End (PHP,PYTHON)</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="seventyfive">75%</p>
+              <h5 class="aboutMe-modal-skill_title">BackEnd Frameworks(DJANGO, WORDPRESS)</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="ninety">90%</p>
+              <h5 class="aboutMe-modal-skill_title">SEO</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button 
+              href="#!"
+              class="btn aboutMe-modal-skill_btn"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              >
+                HIRE US
+              </button>
+            </div>
+            <div class="col">
+              <button href="mailto:connect@ryantrey.com" class="btn aboutMe-modal-skill_btn" >
+                HIRE US
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="aboutMe" id="modal-two">
+      <div class="aboutMe-modal">
+        <div class="container">
+          <p class="aboutMe-modal-close" onclick="closeModal()">+</p>
+          <h5 class="aboutMe-modal-title">About</h5>
+          <h3 class="aboutMe-modal-subtitle">Let me introduce myself.</h3>
+          <div class="row">
+            <div class="col">
+              <img src="Elizabeth Keith" alt="team member image"
+                class="aboutMe-modal_image img-fluid" />
+            </div>
+            <div class="col">
+              <p class="aboutMe-modal-icebreacker">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae tempore quisquam quam <br />
+                itaque fugiat velit incidunt voluptatum voluptatibus tempora,
+                nostrum eaque modi quasi <br />
+                aspernatur eos quo tenetur iste unde quibusdam similique, hic
+                harum iure porro. Perspiciatis <br />
+                repellendus ipsum similique atque quidem est, dolores officiis
+                esse, corporis qui nemo.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 aboutMe-modal-profile">
+              <h4 class="aboutMe-modal-profile_title">PROFILE</h4>
+              <p class="aboutMe-modal-profile_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae tempore quisquam quam.
+                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
+                nostrum eaque modi quasi
+              </p>
+              <h5 class="aboutMe-modal-profile_title">FULLNAME</h5>
+              <p class="aboutMe-modal-profile_text">Ryan Trey</p>
+              <h5 class="aboutMe-modal-profile_title">WEBSITE</h5>
+              <p class="aboutMe-modal-profile_text">elizabethkeith.com</p>
+              <h5 class="aboutMe-modal-profile_title">EMAIL</h5>
+              <p class="aboutMe-modal-profile_text">connect@elizabethkeith.com</p>
+            </div>
+            <div class="col-6 abooutMe-modal-skill">
+              <h4 class="abooutMe-modal-skill_title">
+                SKILL
+              </h4>
+              <p class="aboutMe-modal-skill_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae tempore quisquam quam.
+                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
+                nostrum eaque modi quasi
+              </p>
+              <h5 class="aboutMe-modal-skill_title">Front end(HTML,CSS,JAVASCRIPT,JQUERY,REACT)</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="eightyfive">85%</span></p>
+              <h5 class="aboutMe-modal-skill_title">Back End (PHP,PYTHON)</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="seventyfive">75%</p>
+              <h5 class="aboutMe-modal-skill_title">BackEnd Frameworks(DJANGO, WORDPRESS)</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="ninety">90%</p>
+              <h5 class="aboutMe-modal-skill_title">SEO</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button href="#!" class="btn aboutMe-modal-skill_btn" data-toggle="modal" data-target="#exampleModal">
+                HIRE US
+              </button>
+            </div>
+            <div class="col">
+              <button href="mailto:connect@ryantrey.com" class="btn aboutMe-modal-skill_btn">
+                HIRE US
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="aboutMe" id="modal-three">
+      <div class="aboutMe-modal">
+        <div class="container">
+          <p class="aboutMe-modal-close" onclick="closeModal()">+</p>
+          <h5 class="aboutMe-modal-title">About</h5>
+          <h3 class="aboutMe-modal-subtitle">Let me introduce myself.</h3>
+          <div class="row">
+            <div class="col">
+              <img src="app/images/isco-ZhSQcQ0iR18-unsplash.jpg" alt="team member image"
+                class="aboutMe-modal_image img-fluid" />
+            </div>
+            <div class="col">
+              <p class="aboutMe-modal-icebreacker">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae tempore quisquam quam <br />
+                itaque fugiat velit incidunt voluptatum voluptatibus tempora,
+                nostrum eaque modi quasi <br />
+                aspernatur eos quo tenetur iste unde quibusdam similique, hic
+                harum iure porro. Perspiciatis <br />
+                repellendus ipsum similique atque quidem est, dolores officiis
+                esse, corporis qui nemo.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 aboutMe-modal-profile">
+              <h4 class="aboutMe-modal-profile_title">PROFILE</h4>
+              <p class="aboutMe-modal-profile_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae tempore quisquam quam.
+                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
+                nostrum eaque modi quasi
+              </p>
+              <h5 class="aboutMe-modal-profile_title">FULLNAME</h5>
+              <p class="aboutMe-modal-profile_text">Sipho Mazonda</p>
+              <h5 class="aboutMe-modal-profile_title">WEBSITE</h5>
+              <p class="aboutMe-modal-profile_text">siphomazonda.com</p>
+              <h5 class="aboutMe-modal-profile_title">EMAIL</h5>
+              <p class="aboutMe-modal-profile_text">connect@siphomazonda.com</p>
+            </div>
+            <div class="col-6 abooutMe-modal-skill">
+              <h4 class="abooutMe-modal-skill_title">
+                SKILL
+              </h4>
+              <p class="aboutMe-modal-skill_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae tempore quisquam quam.
+                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
+                nostrum eaque modi quasi
+              </p>
+              <h5 class="aboutMe-modal-skill_title">Front end(HTML,CSS,JAVASCRIPT,JQUERY,REACT)</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="eightyfive">85%</span></p>
+              <h5 class="aboutMe-modal-skill_title">Back End (PHP,PYTHON)</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="seventyfive">75%</p>
+              <h5 class="aboutMe-modal-skill_title">BackEnd Frameworks(DJANGO, WORDPRESS)</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="ninety">90%</p>
+              <h5 class="aboutMe-modal-skill_title">SEO</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button href="#!" class="btn aboutMe-modal-skill_btn" data-toggle="modal" data-target="#exampleModal">
+                HIRE US
+              </button>
+            </div>
+            <div class="col">
+              <button href="mailto:connect@ryantrey.com" class="btn aboutMe-modal-skill_btn">
+                HIRE US
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="aboutMe" id="modal-four">
+      <div class="aboutMe-modal">
+        <div class="container">
+          <p class="aboutMe-modal-close" onclick="closeModal()">+</p>
+          <h5 class="aboutMe-modal-title">About</h5>
+          <h3 class="aboutMe-modal-subtitle">Let me introduce myself.</h3>
+          <div class="row">
+            <div class="col">
+              <img src="app/images/ryan-kwok-89HpG8WXS0M-unsplash.jpg" alt="team member image"
+                class="aboutMe-modal_image img-fluid" />
+            </div>
+            <div class="col">
+              <p class="aboutMe-modal-icebreacker">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae tempore quisquam quam <br />
+                itaque fugiat velit incidunt voluptatum voluptatibus tempora,
+                nostrum eaque modi quasi <br />
+                aspernatur eos quo tenetur iste unde quibusdam similique, hic
+                harum iure porro. Perspiciatis <br />
+                repellendus ipsum similique atque quidem est, dolores officiis
+                esse, corporis qui nemo.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 aboutMe-modal-profile">
+              <h4 class="aboutMe-modal-profile_title">PROFILE</h4>
+              <p class="aboutMe-modal-profile_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae tempore quisquam quam.
+                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
+                nostrum eaque modi quasi
+              </p>
+              <h5 class="aboutMe-modal-profile_title">FULLNAME</h5>
+              <p class="aboutMe-modal-profile_text">Ryan Trey</p>
+              <h5 class="aboutMe-modal-profile_title">WEBSITE</h5>
+              <p class="aboutMe-modal-profile_text">ryantrey.com</p>
+              <h5 class="aboutMe-modal-profile_title">EMAIL</h5>
+              <p class="aboutMe-modal-profile_text">connect@ryantrey.com</p>
+            </div>
+            <div class="col-6 abooutMe-modal-skill">
+              <h4 class="abooutMe-modal-skill_title">
+                SKILL
+              </h4>
+              <p class="aboutMe-modal-skill_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae tempore quisquam quam.
+                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
+                nostrum eaque modi quasi
+              </p>
+              <h5 class="aboutMe-modal-skill_title">Front end(HTML,CSS,JAVASCRIPT,JQUERY,REACT)</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="eightyfive">85%</span></p>
+              <h5 class="aboutMe-modal-skill_title">Back End (PHP,PYTHON)</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="seventyfive">75%</p>
+              <h5 class="aboutMe-modal-skill_title">BackEnd Frameworks(DJANGO, WORDPRESS)</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="ninety">90%</p>
+              <h5 class="aboutMe-modal-skill_title">SEO</h5>
+              <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button href="#!" class="btn aboutMe-modal-skill_btn" data-toggle="modal" data-target="#exampleModal">
+                HIRE US
+              </button>
+            </div>
+            <div class="col">
+              <button href="mailto:connect@ryantrey.com" class="btn aboutMe-modal-skill_btn">
+                HIRE US
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="page-footer mt-3">
       <div class="container">
@@ -896,5 +852,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="./app/Js/app.js"></script>
   </body>
 </html>

@@ -22,12 +22,16 @@ span.navbar-brand_secondary {
 a.nav-link {
   color: #ffffff;
   font-family: Raleway;
-  transition: ease-in .5s;
+  transition: ease-in 0.5s;
   /*
     &:visited {
         color: rgba($theme-color2, 0.75);
     }
     */
+}
+
+a.nav-link.active {
+  color: #ff8b38;
 }
 
 a.nav-link:hover {

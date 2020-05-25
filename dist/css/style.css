@@ -22,12 +22,14 @@ span.navbar-brand_secondary {
 a.nav-link {
   color: #ffffff;
   font-family: Raleway;
-  transition: ease-in .5s;
+  transition: ease-in 0.5s;
   /*
-  &:visited {
-      color: rgba($theme-color2, 0.75);
-  }
-  */ }
+    &:visited {
+        color: rgba($theme-color2, 0.75);
+    }
+    */ }
+  a.nav-link.active {
+    color: #ff8b38; }
   a.nav-link:hover {
     color: #ff8b38;
     transform: scale(1.2); }
@@ -42,13 +44,14 @@ button.navbar-toggler {
 
 /*========MIXINS==============*/
 body {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 16px;
   color: #000;
   line-height: 1.5;
   font-weight: 400; }
 
 .page-header {
+  box-shadow: 5px 0 7px 12px #f2a51a;
   height: 75vh;
   position: relative;
   background-image: linear-gradient(to right, #f2a51ad1, #ea6227), url(../images/robert-gomez-X1YdDXmHS4w-unsplash.jpg);
@@ -110,7 +113,7 @@ body {
         position: relative;
         top: 30%; } }
     .page-header_banner--content-header {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 3em; }
       @media (max-width: 575.98px) {
         .page-header_banner--content-header {
@@ -125,7 +128,7 @@ body {
       @media (min-width: 992px) and (max-width: 1199.98px) {
         .page-header_banner--content-header {
           font-size: 3.3em;
-          margin-bottom: .4em; } }
+          margin-bottom: 0.4em; } }
       @media (min-width: 1200px) and (max-width: 1920px) {
         .page-header_banner--content-header {
           font-size: 3.4em;
@@ -146,8 +149,8 @@ body {
       @media (min-width: 992px) and (max-width: 1199.98px) {
         .page-header_banner--content-text {
           font-size: 1.7rem;
-          line-height: .9em;
-          margin-bottom: .6em; } }
+          line-height: 0.9em;
+          margin-bottom: 0.6em; } }
       @media (min-width: 1200px) and (max-width: 1920px) {
         .page-header_banner--content-text {
           font-size: 1.8rem;
@@ -159,7 +162,7 @@ body {
           font-weight: 200;
           margin-bottom: 1.3em; } }
     .page-header_banner--content-devider {
-      margin-top: .5em;
+      margin-top: 0.5em;
       margin-bottom: 2em;
       border: 0;
       border-top: 2px solid WHITE;
@@ -218,14 +221,11 @@ button.btn.btn-outline-light {
     word-spacing: 3px;
     font-weight: 400;
     font-size: 1.5em;
+    color: #000;
     text-transform: capitalize;
-    transition: ease-in .2s; }
+    transition: ease-in 0.2s; }
     .team-title:hover {
-      display: inline-block;
-      background-color: #ea6227;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
+      color: #ea6227;
       transform: scale(1.3); }
   .team-divider {
     border: 2px solid #ea6227;
@@ -235,10 +235,10 @@ button.btn.btn-outline-light {
     font-family: Raleway;
     font-weight: 300;
     font-size: 1.2em;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: "Montserrat", sans-serif; }
   .team-member {
     position: relative;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: "Montserrat", sans-serif; }
     .team-member_pro-pic__overlay ul {
       display: inline-block;
       margin-block-start: 0;
@@ -248,11 +248,12 @@ button.btn.btn-outline-light {
       padding-inline-start: 0px; }
       .team-member_pro-pic__overlay ul.list-inline li a i.fa {
         color: #ea6227;
-        transition: ease-in .2s; }
+        transition: ease-in 0.2s; }
         .team-member_pro-pic__overlay ul.list-inline li a i.fa:hover {
           color: black;
           transform: scale(1.5); }
     .team-member_pro-pic__image.img-fluid {
+      text-align: left;
       background-color: black;
       max-width: 50%;
       height: 115px;
@@ -261,7 +262,7 @@ button.btn.btn-outline-light {
       left: 45%;
       padding: 7px;
       border: 5px solid #ea6227;
-      transition: all ease-in .2s; }
+      transition: all ease-in 0.2s; }
       .team-member_pro-pic__image.img-fluid:hover {
         max-width: 100%;
         height: 250px;
@@ -287,7 +288,7 @@ button.btn.btn-outline-light {
       color: #ea6227;
       font-size: 1.5em;
       font-weight: 300;
-      transition: ease-in .2s;
+      transition: ease-in 0.2s;
       margin-bottom: 0; }
       .team-member_name:hover {
         transform: scale(1.1);
@@ -298,7 +299,7 @@ button.btn.btn-outline-light {
 button.btn-outline-secondary {
   border-color: #ea6227;
   color: #ea6227;
-  transition: ease-in-out .2s; }
+  transition: ease-in-out 0.2s; }
   button.btn-outline-secondary:hover {
     color: white;
     background-color: #ea6227;
@@ -311,7 +312,7 @@ button.btn-outline-secondary {
 h5#exampleModalLabel {
   color: #ea6227;
   text-align: center;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 label {
   color: #ea6227; }
@@ -357,6 +358,158 @@ footer.page-footer.mt-3 {
 
 .bg-red {
   background-color: red; }
+
+.aboutMe {
+  height: 100%;
+  width: 100%;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.aboutMe-modal {
+  transform: translateY(-52vh);
+  position: relative;
+  height: 110vh;
+  width: 100vw;
+  z-index: 150;
+  position: absolute;
+  text-align: center;
+  background-color: whitesmoke;
+  font-family: Montserrat;
+  padding: 5em 0; }
+  .aboutMe-modal-close {
+    color: #ea6227;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 10vw;
+    font-size: 3em;
+    cursor: pointer; }
+  .aboutMe-modal-title {
+    word-spacing: 3px;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #ea6227;
+    text-transform: capitalize;
+    transition: ease-in 0.2s;
+    margin-bottom: 1rem;
+    font-weight: 400; }
+    .aboutMe-modal-title:hover {
+      color: #000;
+      transform: scale(1.3); }
+  .aboutMe-modal-subtitle {
+    margin-bottom: 1rem;
+    font-weight: 200; }
+  .aboutMe-modal-icebreacker {
+    text-align: left;
+    font-weight: 200;
+    color: rgba(234, 98, 39, 0.85);
+    margin-bottom: 1rem; }
+  .aboutMe-modal_image.img-fluid {
+    background-color: black;
+    max-width: 50%;
+    height: 115px;
+    border-radius: 50%;
+    position: relative;
+    left: 25%;
+    padding: 7px;
+    border: 5px solid #ea6227;
+    transition: all ease-in 0.2s;
+    margin-bottom: 1rem; }
+    .aboutMe-modal_image.img-fluid:hover {
+      max-width: 100%;
+      height: 175px;
+      border-radius: 25%;
+      position: relative;
+      left: 25%;
+      padding: 5px;
+      border: 3px solid #ea6227; }
+      @media (max-width: 767.98px) {
+        .aboutMe-modal_image.img-fluid:hover {
+          max-width: 50%;
+          height: 115px;
+          border-radius: 10%;
+          left: 50%;
+          top: 73%; } }
+    @media (max-width: 767.98px) {
+      .aboutMe-modal_image.img-fluid {
+        left: 50%;
+        top: 73%;
+        z-index: 100; } }
+  .aboutMe-modal-profile {
+    text-align: left;
+    font-weight: 200; }
+    .aboutMe-modal-profile_title {
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem; }
+
+.col-6.abooutMe-modal-skill {
+  text-align: left;
+  font-weight: 200; }
+  .col-6.abooutMe-modal-skill_title {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem; }
+
+p.aboutMe-modal-profile_text {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 200;
+  margin-bottom: 1.5rem; }
+
+p.aboutMe-modal-skill_text {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 200;
+  margin-bottom: 1.5rem; }
+
+p.progress.aboutMe-modal-skill_status {
+  background-color: rgba(0, 0, 0, 0.85);
+  margin-left: 0; }
+
+span.seventyfive {
+  width: 75%;
+  background-color: rgba(234, 98, 39, 0.75);
+  color: #fff;
+  font-weight: 600;
+  padding-left: 75%; }
+
+span.eighty {
+  width: 80%;
+  background-color: rgba(234, 98, 39, 0.75);
+  color: #fff;
+  font-weight: 600;
+  padding-left: 80%; }
+
+span.eightyfive {
+  width: 85%;
+  background-color: rgba(234, 98, 39, 0.75);
+  color: #fff;
+  font-weight: 600;
+  padding-left: 85%; }
+
+span.ninety {
+  width: 90%;
+  background-color: rgba(234, 98, 39, 0.75);
+  color: #fff;
+  font-weight: 600;
+  padding-left: 90%; }
+
+button.btn.aboutMe-modal-skill_btn {
+  border: 1px solid #ea6227;
+  color: #ea6227;
+  transform: translateX(-14.5vw); }
+  button.btn.aboutMe-modal-skill_btn:hover {
+    color: #fff;
+    background-color: #ea6227;
+    transform: scale(1.1);
+    transform: translateX(-14.5vw); }
+
+a.nav-link.current {
+  color: #ea6227; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
