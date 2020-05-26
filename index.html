@@ -173,7 +173,7 @@
                       <br />
                       Eum et reprehenderit quam molestias.
                     </p>
-                    <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#view-michael">
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" data-target="#view-michael">
                       View Mich
                     </button>
                     <button type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#remove-michael">
@@ -201,7 +201,7 @@
                           <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Done</button>
+                            <button type="button" class="btn btn-outline-warning btn-sm" data-dismiss="modal">Done</button>
                            
                           </div>
                         </div>
@@ -226,7 +226,7 @@
                             <p class="aboutMe-modal-profile_text">connect@michaeldoe.com</p>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Done</button>
+                            <button type="button" class="btn btn-outline-warning btn-sm" data-dismiss="modal">Done</button>
                             
                           </div>
                         </div>
@@ -247,10 +247,9 @@
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            Leave you details and we will get in touch
-                            <i class="fa fa-smile-o" aria-hidden="true"></i>
-                          </h5>
+                          <h4 class="header-banner__contact-form-header--title">
+                            Try your <span class="header-banner__contact-form-header--title-secondary"> free </span> trial today.
+                          </h4>
                           <button
                             type="button"
                             class="close"
@@ -261,89 +260,27 @@
                           </button>
                         </div>
                         <div class="modal-body">
-                          <form>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputName">Name</label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="inputName"
-                                />
+                        <div class="header-banner__contact">
+                          <form method="post" action="">
+                            <div class="header-banner__contact-form-body">
+                              <div class="form-group">
+                                <label for="client-name">Name</label>
+                                <input id="client-name" class="form-control" type="text" name="name" />
                               </div>
-                              <div class="form-group col-md-6">
-                                <label for="inputSurname">Surname</label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="inputSurname"
-                                />
+                              <div class="form-group">
+                                <label for="client-email">Email</label>
+                                <input id="client-email" class="form-control" type="email" name="email" />
                               </div>
+                              <div class="form-group">
+                                <label for="client-password">Password</label>
+                                <input id="client-password" class="form-control" type="password" name="password" />
+                              </div>
+                              <button class="header-banner__contact-form-body--submit btn" type="submit">
+                                Subscribe
+                              </button>
                             </div>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputEmail">Email</label>
-                                <input
-                                  type="email"
-                                  class="form-control"
-                                  id="inputEmail"
-                                />
-                              </div>
-                              <div class="form-group col-md-6">
-                                <label for="inputTel">Cellphone Number</label>
-                                <input
-                                  type="tel"
-                                  class="form-control"
-                                  id="inputTel"
-                                />
-                              </div>
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputAddress">Adress</label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="inputAdress"
-                                />
-                              </div>
-                              <div class="form-group col-md-4">
-                                <label for="inputCity">City</label>
-                                <select id="inputCity" class="form-control">
-                                  <option selected>Cape Town</option>
-                                  <option selected>Durban</option>
-                                  <option selected>PTA</option>
-                                </select>
-                              </div>
-                              <div class="form-group col-md-2">
-                                <label for="inputZip">Zip</label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="inputZip"
-                                />
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  id="gridCheck"
-                                />
-                                <label class="form-check-label" for="gridCheck">
-                                  Check me out
-                                </label>
-                              </div>
-                            </div>
-                            <button
-                              type="submit"
-                              class="btn btn-outline-secondary btn-sm"
-                            >
-                              Submit
-                            </button>
-                            
                           </form>
+                        </div><!--banner-contact-->
                         </div>
                       </div>
                     </div>
@@ -409,7 +346,7 @@
                       Eum et reprehenderit quam molestias.
                     </p>
                     
-                  <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#view-elizabeth">
+                  <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" data-target="#view-elizabeth">
                     View Eliz
                   </button>
                     <button type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#remove-elizabeth">
@@ -435,7 +372,7 @@
                             <p class="aboutMe-modal-profile_text">connect@elizabethkeith.com</p>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-outline-warning btn-sm" data-dismiss="modal">Cancel</button>
                             <button type="button" class="btn btn-outline-danger btn-sm">Delete Elizabeth</button>
                           </div>
                         </div>
@@ -464,7 +401,7 @@
                           <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Done</button>
+                            <button type="button" class="btn btn-outline-warning btn-sm" data-dismiss="modal">Done</button>
                           </div>
                         </div>
                       </div>
@@ -534,7 +471,7 @@
                       <br />
                       Eum et reprehenderit quam molestias.
                     </p>
-                    <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#view-sipho">
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" data-target="#view-sipho">
                       View Sipho
                     </button>
                     <button type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#remove-sipho">
@@ -560,7 +497,7 @@
                             <p class="aboutMe-modal-profile_text">connect@siphomazonda.com</p>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-outline-warning btn-sm" data-dismiss="modal">Cancel</button>
                             <button type="button" class="btn btn-outline-danger btn-sm">Delete Sipho</button>
                           </div>
                         </div>
@@ -588,7 +525,7 @@
                             <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Done</button>
+                            <button type="button" class="btn btn-outline-warning btn-sm" data-dismiss="modal">Done</button>
                           </div>
                         </div>
                       </div>
@@ -655,7 +592,7 @@
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Eum et reprehenderit quam molestias.
                     </p>
-                    <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#view-ryan">
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" data-target="#view-ryan">
                       View Ryan
                     </button>
                     <button type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#remove-ryan">
@@ -681,7 +618,7 @@
                           <p class="aboutMe-modal-profile_text">connect@ryantrey.com</p>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-outline-warning btn-sm" data-dismiss="modal">Cancel</button>
                             <button type="button" class="btn btn-outline-danger btn-sm">Delete Ryan</button>
                           </div>
                         </div>
@@ -708,7 +645,7 @@
                           <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Done</button>
+                            <button type="button" class="btn btn-outline-warning btn-sm" data-dismiss="modal">Done</button>
                           </div>
                         </div>
                       </div>
