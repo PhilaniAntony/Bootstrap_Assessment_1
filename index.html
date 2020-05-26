@@ -173,14 +173,66 @@
                       <br />
                       Eum et reprehenderit quam molestias.
                     </p>
-                    <button
-                      href="#!"
-                      class="btn btn-outline-secondary btn-sm"
-                      id="person-one"
-                      onclick="openModal()"
-                    >
-                      Read more
+                    <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#view-michael">
+                      View Mich
                     </button>
+                    <button type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#remove-michael">
+                      Remove Mich
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal" id="view-michael" tabindex="-1" role="dialog" aria-labelledby="viewMicheal" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">View Michael</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                          <h5 class="aboutMe-modal-skill_title">Front end(HTML,CSS,JAVASCRIPT,JQUERY,REACT)</h5>
+                          <p class="progress aboutMe-modal-skill_status"><span class="eightyfive">85%</span></p>
+                          <h5 class="aboutMe-modal-skill_title">Back End (PHP,PYTHON)</h5>
+                          <p class="progress aboutMe-modal-skill_status"><span class="seventyfive">75%</p>
+                          <h5 class="aboutMe-modal-skill_title">BackEnd Frameworks(DJANGO, WORDPRESS)</h5>
+                          <p class="progress aboutMe-modal-skill_status"><span class="ninety">90%</p>
+                          <h5 class="aboutMe-modal-skill_title">SEO</h5>
+                          <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Done</button>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--modal-->
+                    <!-- Modal -->
+                    <div class="modal" id="view-michael" tabindex="-1" role="dialog" aria-labelledby="viewMicheal" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Micheal's Skilss</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5 class="aboutMe-modal-profile_title">FULLNAME</h5>
+                            <p class="aboutMe-modal-profile_text">Michael Doe</p>
+                            <h5 class="aboutMe-modal-profile_title">WEBSITE</h5>
+                            <p class="aboutMe-modal-profile_text">michaeldoe.com</p>
+                            <h5 class="aboutMe-modal-profile_title">EMAIL</h5>
+                            <p class="aboutMe-modal-profile_text">connect@michaeldoe.com</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Done</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--modal-->
                   </div>
                   <!--P4-->
                   <!--======================*MODAL*========================-->
@@ -290,6 +342,7 @@
                             >
                               Submit
                             </button>
+                            
                           </form>
                         </div>
                       </div>
@@ -355,14 +408,68 @@
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Eum et reprehenderit quam molestias.
                     </p>
-                    <button
-                      href="#!"
-                      class="btn btn-outline-secondary btn-sm"
-                      id="person-two"
-                      onclick="openModal()"
-                    >
-                      Read more
+                    
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#view-elizabeth">
+                    View Eliz
+                  </button>
+                    <button type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#remove-elizabeth">
+                      Remove Eliz
                     </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal" id="remove-elizabeth" tabindex="-1" role="dialog" aria-labelledby="romoveElizabeth" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Remove Elizabeth </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5 class="aboutMe-modal-profile_title">FULLNAME</h5>
+                            <p class="aboutMe-modal-profile_text">Elizabeth Keith</p>
+                            <h5 class="aboutMe-modal-profile_title">WEBSITE</h5>
+                            <p class="aboutMe-modal-profile_text">elizabethkeith.com</p>
+                            <h5 class="aboutMe-modal-profile_title">EMAIL</h5>
+                            <p class="aboutMe-modal-profile_text">connect@elizabethkeith.com</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Delete Elizabeth</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--modal-->
+                    <!-- Modal -->
+                    <div class="modal" id="view-elizabeth" tabindex="-1" role="dialog" aria-labelledby="viewElizabeth"
+                      aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">View Elizabeth </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                          <h5 class="aboutMe-modal-skill_title">Front end(HTML,CSS,JAVASCRIPT,JQUERY,REACT)</h5>
+                          <p class="progress aboutMe-modal-skill_status"><span class="eightyfive">85%</span></p>
+                          <h5 class="aboutMe-modal-skill_title">Back End (PHP,PYTHON)</h5>
+                          <p class="progress aboutMe-modal-skill_status"><span class="seventyfive">75%</p>
+                          <h5 class="aboutMe-modal-skill_title">BackEnd Frameworks(DJANGO, WORDPRESS)</h5>
+                          <p class="progress aboutMe-modal-skill_status"><span class="ninety">90%</p>
+                          <h5 class="aboutMe-modal-skill_title">SEO</h5>
+                          <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Done</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--modal-->
                   </div>
                   <!--P4-->
                 </div>
@@ -427,14 +534,67 @@
                       <br />
                       Eum et reprehenderit quam molestias.
                     </p>
-                    <button
-                      href="#!"
-                      class="btn btn-outline-secondary btn-sm"
-                      id="person-two"
-                      onclick="openModal()"
-                    >
-                      Read more
+                    <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#view-sipho">
+                      View Sipho
                     </button>
+                    <button type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#remove-sipho">
+                      Remove Sipho
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal" id="remove-sipho" tabindex="-1" role="dialog" aria-labelledby="romoveSipho" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Remove Sipho</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5 class="aboutMe-modal-profile_title">FULLNAME</h5>
+                            <p class="aboutMe-modal-profile_text">Sipho Mazonda</p>
+                            <h5 class="aboutMe-modal-profile_title">WEBSITE</h5>
+                            <p class="aboutMe-modal-profile_text">siphomazonda.com</p>
+                            <h5 class="aboutMe-modal-profile_title">EMAIL</h5>
+                            <p class="aboutMe-modal-profile_text">connect@siphomazonda.com</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Delete Sipho</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--modal-->
+                    <!-- Modal -->
+                    <div class="modal" id="view-sipho" tabindex="-1" role="dialog" aria-labelledby="viewSipho" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">View Sipho</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5 class="aboutMe-modal-skill_title">Front end(HTML,CSS,JAVASCRIPT,JQUERY,REACT)</h5>
+                            <p class="progress aboutMe-modal-skill_status"><span class="eightyfive">85%</span></p>
+                            <h5 class="aboutMe-modal-skill_title">Back End (PHP,PYTHON)</h5>
+                            <p class="progress aboutMe-modal-skill_status"><span class="seventyfive">75%</p>
+                            <h5 class="aboutMe-modal-skill_title">BackEnd Frameworks(DJANGO, WORDPRESS)</h5>
+                            <p class="progress aboutMe-modal-skill_status"><span class="ninety">90%</p>
+                            <h5 class="aboutMe-modal-skill_title">SEO</h5>
+                            <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Done</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--modal-->
+                     
                   </div>
                   <!--P4-->
                 </div>
@@ -495,14 +655,65 @@
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Eum et reprehenderit quam molestias.
                     </p>
-                    <button
-                      href="#!"
-                      class="btn btn-outline-secondary btn-sm"
-                      id="person-three"
-                      onclick="openModal()"
-                    >
-                      Read more
+                    <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#view-ryan">
+                      View Ryan
                     </button>
+                    <button type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#remove-ryan">
+                      Remove Ryan
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal" id="remove-michael" tabindex="-1" role="dialog" aria-labelledby="romoveRyan" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Remove Ryan</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                          <h5 class="aboutMe-modal-profile_title">FULLNAME</h5>
+                          <p class="aboutMe-modal-profile_text">Ryan Trey</p>
+                          <h5 class="aboutMe-modal-profile_title">WEBSITE</h5>
+                          <p class="aboutMe-modal-profile_text">ryantrey.com</p>
+                          <h5 class="aboutMe-modal-profile_title">EMAIL</h5>
+                          <p class="aboutMe-modal-profile_text">connect@ryantrey.com</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Delete Ryan</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--modal-->
+                    <div class="modal" id="view-michael" tabindex="-1" role="dialog" aria-labelledby="viewRyan" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">View Ryan</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                          <h5 class="aboutMe-modal-skill_title">Front end(HTML,CSS,JAVASCRIPT,JQUERY,REACT)</h5>
+                          <p class="progress aboutMe-modal-skill_status"><span class="eightyfive">85%</span></p>
+                          <h5 class="aboutMe-modal-skill_title">Back End (PHP,PYTHON)</h5>
+                          <p class="progress aboutMe-modal-skill_status"><span class="seventyfive">75%</p>
+                          <h5 class="aboutMe-modal-skill_title">BackEnd Frameworks(DJANGO, WORDPRESS)</h5>
+                          <p class="progress aboutMe-modal-skill_status"><span class="ninety">90%</p>
+                          <h5 class="aboutMe-modal-skill_title">SEO</h5>
+                          <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-info btn-sm" data-dismiss="modal">Done</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--modal-->
 
                     <!--======================CONTENT HOLDER========================-->
                   </div>
@@ -523,277 +734,47 @@
     <section class="aboutMe" id="modal-one">
       <div class="aboutMe-modal">
         <div class="container">
-          <p class="aboutMe-modal-close" onclick="closeModal()">+</p>
-          <h5 class="aboutMe-modal-title">About</h5>
-          <h3 class="aboutMe-modal-subtitle">Let me introduce myself.</h3>
+          <h5 class="aboutMe-modal-title">About Us</h5>
+          <h3 class="aboutMe-modal-subtitle">Let us introduce myself.</h3>
+          
           <div class="row">
             <div class="col">
               <img src="app/images/bianca-berg-J4LSoK1PvWM-unsplash.jpg" alt="team member image"
                 class="aboutMe-modal_image img-fluid" />
-                
+            </div>
+            <div class="col">  
+              <img src="app/images/gemma-chua-tran-BQeqSZEyltY-unsplash.jpg" alt="team member image"
+                class="team-member_pro-pic__image img-fluid" />
             </div>
             <div class="col">
-              <p class="aboutMe-modal-icebreacker">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae tempore quisquam quam <br />
-                itaque fugiat velit incidunt voluptatum voluptatibus tempora,
-                nostrum eaque modi quasi <br />
-                aspernatur eos quo tenetur iste unde quibusdam similique, hic
-                harum iure porro. Perspiciatis <br />
-                repellendus ipsum similique atque quidem est, dolores officiis
-                esse, corporis qui nemo.
-              </p>
+              <img src="app/images/isco-ZhSQcQ0iR18-unsplash.jpg" alt="team member image" class="aboutMe-modal_image img-fluid" />
             </div>
-          </div>
-          <div class="row">
-            <div class="col-6 aboutMe-modal-profile">
-              <h4 class="aboutMe-modal-profile_title">PROFILE</h4>
-              <p class="aboutMe-modal-profile_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae tempore quisquam quam.
-                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
-                nostrum eaque modi quasi
-              </p>
-              <h5 class="aboutMe-modal-profile_title">FULLNAME</h5>
-              <p class="aboutMe-modal-profile_text">Michael Doe</p>
-              <h5 class="aboutMe-modal-profile_title">WEBSITE</h5>
-              <p class="aboutMe-modal-profile_text">michaeldoe.com</p>
-              <h5 class="aboutMe-modal-profile_title">EMAIL</h5>
-              <p class="aboutMe-modal-profile_text">connect@michaeldoe.com</p>
-            </div>
-            <div class="col-6 abooutMe-modal-skill">
-              <h4 class="abooutMe-modal-skill_title">
-                SKILL
-              </h4>
-              <p class="aboutMe-modal-skill_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae tempore quisquam quam.
-                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
-                nostrum eaque modi quasi
-              </p>
-              <h5 class="aboutMe-modal-skill_title">Front end(HTML,CSS,JAVASCRIPT,JQUERY,REACT)</h5>
-              <p class="progress aboutMe-modal-skill_status"><span class="eightyfive">85%</span></p>
-              <h5 class="aboutMe-modal-skill_title">Back End (PHP,PYTHON)</h5>
-              <p class="progress aboutMe-modal-skill_status"><span class="seventyfive">75%</p>
-              <h5 class="aboutMe-modal-skill_title">BackEnd Frameworks(DJANGO, WORDPRESS)</h5>
-              <p class="progress aboutMe-modal-skill_status"><span class="ninety">90%</p>
-              <h5 class="aboutMe-modal-skill_title">SEO</h5>
-              <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <button 
-              href="#!"
-              class="btn aboutMe-modal-skill_btn"
-              data-toggle="modal"
-              data-target="#exampleModal"
-              >
-                HIRE US
-              </button>
-            </div>
-            <div class="col">
-              <button href="mailto:connect@ryantrey.com" class="btn aboutMe-modal-skill_btn" >
-                HIRE US
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="aboutMe" id="modal-two">
-      <div class="aboutMe-modal">
-        <div class="container">
-          <p class="aboutMe-modal-close" onclick="closeModal()">+</p>
-          <h5 class="aboutMe-modal-title">About</h5>
-          <h3 class="aboutMe-modal-subtitle">Let me introduce myself.</h3>
-          <div class="row">
-            <div class="col">
-              <img src="Elizabeth Keith" alt="team member image"
-                class="aboutMe-modal_image img-fluid" />
-            </div>
-            <div class="col">
-              <p class="aboutMe-modal-icebreacker">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae tempore quisquam quam <br />
-                itaque fugiat velit incidunt voluptatum voluptatibus tempora,
-                nostrum eaque modi quasi <br />
-                aspernatur eos quo tenetur iste unde quibusdam similique, hic
-                harum iure porro. Perspiciatis <br />
-                repellendus ipsum similique atque quidem est, dolores officiis
-                esse, corporis qui nemo.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6 aboutMe-modal-profile">
-              <h4 class="aboutMe-modal-profile_title">PROFILE</h4>
-              <p class="aboutMe-modal-profile_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae tempore quisquam quam.
-                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
-                nostrum eaque modi quasi
-              </p>
-              <h5 class="aboutMe-modal-profile_title">FULLNAME</h5>
-              <p class="aboutMe-modal-profile_text">Ryan Trey</p>
-              <h5 class="aboutMe-modal-profile_title">WEBSITE</h5>
-              <p class="aboutMe-modal-profile_text">elizabethkeith.com</p>
-              <h5 class="aboutMe-modal-profile_title">EMAIL</h5>
-              <p class="aboutMe-modal-profile_text">connect@elizabethkeith.com</p>
-            </div>
-            <div class="col-6 abooutMe-modal-skill">
-              <h4 class="abooutMe-modal-skill_title">
-                SKILL
-              </h4>
-              <p class="aboutMe-modal-skill_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae tempore quisquam quam.
-                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
-                nostrum eaque modi quasi
-              </p>
-              <h5 class="aboutMe-modal-skill_title">Front end(HTML,CSS,JAVASCRIPT,JQUERY,REACT)</h5>
-              <p class="progress aboutMe-modal-skill_status"><span class="eightyfive">85%</span></p>
-              <h5 class="aboutMe-modal-skill_title">Back End (PHP,PYTHON)</h5>
-              <p class="progress aboutMe-modal-skill_status"><span class="seventyfive">75%</p>
-              <h5 class="aboutMe-modal-skill_title">BackEnd Frameworks(DJANGO, WORDPRESS)</h5>
-              <p class="progress aboutMe-modal-skill_status"><span class="ninety">90%</p>
-              <h5 class="aboutMe-modal-skill_title">SEO</h5>
-              <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <button href="#!" class="btn aboutMe-modal-skill_btn" data-toggle="modal" data-target="#exampleModal">
-                HIRE US
-              </button>
-            </div>
-            <div class="col">
-              <button href="mailto:connect@ryantrey.com" class="btn aboutMe-modal-skill_btn">
-                HIRE US
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="aboutMe" id="modal-three">
-      <div class="aboutMe-modal">
-        <div class="container">
-          <p class="aboutMe-modal-close" onclick="closeModal()">+</p>
-          <h5 class="aboutMe-modal-title">About</h5>
-          <h3 class="aboutMe-modal-subtitle">Let me introduce myself.</h3>
-          <div class="row">
-            <div class="col">
-              <img src="app/images/isco-ZhSQcQ0iR18-unsplash.jpg" alt="team member image"
-                class="aboutMe-modal_image img-fluid" />
-            </div>
-            <div class="col">
-              <p class="aboutMe-modal-icebreacker">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae tempore quisquam quam <br />
-                itaque fugiat velit incidunt voluptatum voluptatibus tempora,
-                nostrum eaque modi quasi <br />
-                aspernatur eos quo tenetur iste unde quibusdam similique, hic
-                harum iure porro. Perspiciatis <br />
-                repellendus ipsum similique atque quidem est, dolores officiis
-                esse, corporis qui nemo.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6 aboutMe-modal-profile">
-              <h4 class="aboutMe-modal-profile_title">PROFILE</h4>
-              <p class="aboutMe-modal-profile_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae tempore quisquam quam.
-                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
-                nostrum eaque modi quasi
-              </p>
-              <h5 class="aboutMe-modal-profile_title">FULLNAME</h5>
-              <p class="aboutMe-modal-profile_text">Sipho Mazonda</p>
-              <h5 class="aboutMe-modal-profile_title">WEBSITE</h5>
-              <p class="aboutMe-modal-profile_text">siphomazonda.com</p>
-              <h5 class="aboutMe-modal-profile_title">EMAIL</h5>
-              <p class="aboutMe-modal-profile_text">connect@siphomazonda.com</p>
-            </div>
-            <div class="col-6 abooutMe-modal-skill">
-              <h4 class="abooutMe-modal-skill_title">
-                SKILL
-              </h4>
-              <p class="aboutMe-modal-skill_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae tempore quisquam quam.
-                Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
-                nostrum eaque modi quasi
-              </p>
-              <h5 class="aboutMe-modal-skill_title">Front end(HTML,CSS,JAVASCRIPT,JQUERY,REACT)</h5>
-              <p class="progress aboutMe-modal-skill_status"><span class="eightyfive">85%</span></p>
-              <h5 class="aboutMe-modal-skill_title">Back End (PHP,PYTHON)</h5>
-              <p class="progress aboutMe-modal-skill_status"><span class="seventyfive">75%</p>
-              <h5 class="aboutMe-modal-skill_title">BackEnd Frameworks(DJANGO, WORDPRESS)</h5>
-              <p class="progress aboutMe-modal-skill_status"><span class="ninety">90%</p>
-              <h5 class="aboutMe-modal-skill_title">SEO</h5>
-              <p class="progress aboutMe-modal-skill_status"><span class="eighty">80%</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <button href="#!" class="btn aboutMe-modal-skill_btn" data-toggle="modal" data-target="#exampleModal">
-                HIRE US
-              </button>
-            </div>
-            <div class="col">
-              <button href="mailto:connect@ryantrey.com" class="btn aboutMe-modal-skill_btn">
-                HIRE US
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="aboutMe" id="modal-four">
-      <div class="aboutMe-modal">
-        <div class="container">
-          <p class="aboutMe-modal-close" onclick="closeModal()">+</p>
-          <h5 class="aboutMe-modal-title">About</h5>
-          <h3 class="aboutMe-modal-subtitle">Let me introduce myself.</h3>
-          <div class="row">
             <div class="col">
               <img src="app/images/ryan-kwok-89HpG8WXS0M-unsplash.jpg" alt="team member image"
                 class="aboutMe-modal_image img-fluid" />
             </div>
-            <div class="col">
-              <p class="aboutMe-modal-icebreacker">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae tempore quisquam quam <br />
-                itaque fugiat velit incidunt voluptatum voluptatibus tempora,
-                nostrum eaque modi quasi <br />
-                aspernatur eos quo tenetur iste unde quibusdam similique, hic
-                harum iure porro. Perspiciatis <br />
-                repellendus ipsum similique atque quidem est, dolores officiis
-                esse, corporis qui nemo.
-              </p>
-            </div>
           </div>
           <div class="row">
             <div class="col-6 aboutMe-modal-profile">
-              <h4 class="aboutMe-modal-profile_title">PROFILE</h4>
+              <h4 class="aboutMe-modal-profile_title">Who are we ?</h4>
+              <hr class="profile-divider" />
               <p class="aboutMe-modal-profile_text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Recusandae tempore quisquam quam.
                 Itaque fugiat velit incidunt voluptatum voluptatibus tempora,
                 nostrum eaque modi quasi
               </p>
-              <h5 class="aboutMe-modal-profile_title">FULLNAME</h5>
-              <p class="aboutMe-modal-profile_text">Ryan Trey</p>
+              <h5 class="aboutMe-modal-profile_title">Company Name</h5>
+              <p class="aboutMe-modal-profile_text">Creative Outline</p>
               <h5 class="aboutMe-modal-profile_title">WEBSITE</h5>
-              <p class="aboutMe-modal-profile_text">ryantrey.com</p>
+              <p class="aboutMe-modal-profile_text">creativeoutlines.com</p>
               <h5 class="aboutMe-modal-profile_title">EMAIL</h5>
-              <p class="aboutMe-modal-profile_text">connect@ryantrey.com</p>
+              <p class="aboutMe-modal-profile_text">connect@creativeoutlines.com</p>
             </div>
             <div class="col-6 abooutMe-modal-skill">
               <h4 class="abooutMe-modal-skill_title">
-                SKILL
+                What do we offer?
+                <hr class="profile-divider" />
               </h4>
               <p class="aboutMe-modal-skill_text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -823,9 +804,11 @@
               </button>
             </div>
           </div>
-        </div>
+          </div>
+          </div>
       </div>
     </section>
+   
     <footer class="page-footer mt-3">
       <div class="container">
         <p class="page-footer_content">
@@ -850,6 +833,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="./app/Js/app.js"></script>
+   
   </body>
 </html>
